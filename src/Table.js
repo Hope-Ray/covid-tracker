@@ -1,9 +1,10 @@
 import React from 'react'
+import './Table.css'
 
-function Table( {countries}) {
+function Table( props) {
    return (
       <div className='table'>
-         {countries.map(({country, cases}) => (
+         {props.countries.map(({country, cases}) => (
             <tr>
                <td>{country}</td>
                <td>
